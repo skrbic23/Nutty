@@ -19,7 +19,8 @@ namespace Nutty2._0
 
         private void Sto1_Click(object sender, EventArgs e)
         {
-            Racun.ActiveForm.Show();
+            Racun frm = new Racun(this);
+            frm.Show();
         }
     }
 }

@@ -29,36 +29,67 @@ namespace Nutty2._0
         /// </summary>
         private void InitializeComponent()
         {
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.Pica = new System.Windows.Forms.CheckedListBox();
+            this.Jelo = new System.Windows.Forms.CheckedListBox();
+            this.Desert = new System.Windows.Forms.CheckedListBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // checkedListBox1
+            // Pica
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "Kafa",
-            "Espreso",
-            "Sok",
-            "Alkoholno pice"});
-            this.checkedListBox1.Location = new System.Drawing.Point(27, 12);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(120, 109);
-            this.checkedListBox1.TabIndex = 1;
+            this.Pica.FormattingEnabled = true;
+            this.Pica.Location = new System.Drawing.Point(46, 36);
+            this.Pica.Name = "Pica";
+            this.Pica.Size = new System.Drawing.Size(180, 169);
+            this.Pica.TabIndex = 0;
+            // 
+            // Jelo
+            // 
+            this.Jelo.FormattingEnabled = true;
+            this.Jelo.Location = new System.Drawing.Point(272, 36);
+            this.Jelo.Name = "Jelo";
+            this.Jelo.Size = new System.Drawing.Size(180, 169);
+            this.Jelo.TabIndex = 1;
+            // 
+            // Desert
+            // 
+            this.Desert.FormattingEnabled = true;
+            this.Desert.Location = new System.Drawing.Point(495, 36);
+            this.Desert.Name = "Desert";
+            this.Desert.Size = new System.Drawing.Size(180, 169);
+            this.Desert.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(658, 404);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(114, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Stampaj racun";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Racun
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Desert);
+            this.Controls.Add(this.Jelo);
+            this.Controls.Add(this.Pica);
             this.Name = "Racun";
             this.Text = "Racun";
+            this.Load += new System.EventHandler(this.Racun_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox Pica;
+        private System.Windows.Forms.CheckedListBox Jelo;
+        private System.Windows.Forms.CheckedListBox Desert;
+        private System.Windows.Forms.Button button1;
     }
 }
